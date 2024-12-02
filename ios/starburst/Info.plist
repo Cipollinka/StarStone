@@ -66,5 +66,11 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>${PRODUCT_NAME} requires access to the camera to capture photos for user profiles and in-app activities.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>${PRODUCT_NAME} requires microphone access to record audio for in-app video features.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>${PRODUCT_NAME} needs access to your Photo Library to enable photo selection for app use only.</string>
 </dict>
 </plist>
