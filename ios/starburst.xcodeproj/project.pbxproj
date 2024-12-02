@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* starburstTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* starburstTests.m */; };
+		018177E2A8394AFBB3D39316 /* activesettings.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F5E5884797D4D549C2E22BC /* activesettings.png */; };
+		0409FA4EBE5D49EBA92901D6 /* gem8.png in Resources */ = {isa = PBXBuildFile; fileRef = EF2A427F90B44408AD244971 /* gem8.png */; };
+		0C4683FBC6EA4013A57B64A8 /* gem6.png in Resources */ = {isa = PBXBuildFile; fileRef = AC6E70AD5EA64246AF0827CE /* gem6.png */; };
+		0C80B921A6F3F58F76C31292 /* libPods-starburst.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-starburst.a */; };
+		0DEC97EA140E4E1ABAFAA3A0 /* SFProText-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BBEC468DB084D9F975DE5C3 /* SFProText-BoldItalic.ttf */; };
+		0E35F73BFC624E7D982F4282 /* purchase.png in Resources */ = {isa = PBXBuildFile; fileRef = CAAC2D9236D04A5B8131E51F /* purchase.png */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1968A3BF5ED940A2B27D7655 /* SFProText-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8442DDC97A494E02AAE0C3DA /* SFProText-RegularItalic.ttf */; };
+		1F19C843BDC91408159DA473 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1A8F4C502A54EFEDC4BD8F26 /* PrivacyInfo.xcprivacy */; };
+		1F21053DC4024CB3B153783F /* activegame.png in Resources */ = {isa = PBXBuildFile; fileRef = A26D1FE5849043C3AFE4EDF9 /* activegame.png */; };
+		23655E8F7960443C85A08143 /* SFProText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09AEC3E609F1486EA97FF1C2 /* SFProText-Heavy.ttf */; };
+		25FDB3804B3849B3BABA952C /* shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A47215A2A4545B1AFE80EA1 /* shop.png */; };
+		2B9790AA0437438392EE19E5 /* SFProText-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F909BEFE0255480C8F9D86AC /* SFProText-LightItalic.ttf */; };
+		2C24ED573DA74907AB9041A6 /* sadsmile.png in Resources */ = {isa = PBXBuildFile; fileRef = BE2C4BCED62347338051EE1E /* sadsmile.png */; };
+		2C270F94E8ED4B8B92E928C4 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ABD3A3141C841DFA85C4FEA /* plus.png */; };
+		3280E2A584C845BC91FCCEC3 /* coin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CA311FD4F6E46FE9E20FBCE /* coin.png */; };
+		34241EF837754242B2435B88 /* gem14.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD71AF384634C55ABC9580D /* gem14.png */; };
+		3556A378512149C39075C0E3 /* SFProText-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36B1564B942547F4827491E3 /* SFProText-SemiboldItalic.ttf */; };
+		39D04B3157994D35A8D5866C /* gem11.png in Resources */ = {isa = PBXBuildFile; fileRef = 30E820876B864C9AAA3A2D94 /* gem11.png */; };
+		3F5DB8A0A2E74B0193EDE557 /* loader.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3C8ADDC88D446C9D6EDEC7 /* loader.png */; };
+		4A078E0B12E348C884A9C10F /* gem5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9667890C5FA54A818FB37788 /* gem5.png */; };
+		4CF05B088EEB4F179CB9976B /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = F77A5B601011494486F3CE18 /* settings.png */; };
+		58B0CFEEBB35427E9920BAA4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = FD39812E07B448B999910134 /* bg.png */; };
+		5CBA878BDEAC4E08908A09DC /* chevronup.png in Resources */ = {isa = PBXBuildFile; fileRef = CE184F5FFFC74F51A1512EDD /* chevronup.png */; };
+		5D56BCC8127B4DDBB57672B9 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 2005F0A9B8A64D3AAACDD434 /* edit.png */; };
+		5E6AE9EC590E48F7A8870883 /* cards.png in Resources */ = {isa = PBXBuildFile; fileRef = DB34361DD34B425489A555B8 /* cards.png */; };
+		5FA78D2E59BA4393ADF48ECB /* gem4.png in Resources */ = {isa = PBXBuildFile; fileRef = EEB08DF83D8A4C079500CA92 /* gem4.png */; };
+		6079C5895B0C47EA8EB8607C /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FD6C3A7348618062938D /* arrow.png */; };
+		620F3D26B53D45C7A1D4DBFC /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = CDF6FBB45834497AA894EA4D /* close.png */; };
+		62486CBABEFC470BB716B86C /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 31B8CC08AEE5417AB2328A4D /* SFProText-Medium.ttf */; };
+		67303F5005B9496BB63C5F51 /* collection.png in Resources */ = {isa = PBXBuildFile; fileRef = B9B82318A6924D7BAD2640C3 /* collection.png */; };
+		67D844D7E4114F3EB1CD8852 /* activeshop.png in Resources */ = {isa = PBXBuildFile; fileRef = C89E9658A9C64A95A8A3B585 /* activeshop.png */; };
+		696D38327D3747A8BCBBEA45 /* gamesuccess.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DEADE6C8033439888084996 /* gamesuccess.png */; };
+		717A2C78836F447F8FBBF2AC /* gem15.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CD157D8D30414DA835F67A /* gem15.png */; };
+		7699B88040F8A987B510C191 /* libPods-starburst-starburstTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-starburst-starburstTests.a */; };
+		7F35A22E70414113A2EBBFBF /* SFProText-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 312453354C2646549071F033 /* SFProText-HeavyItalic.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8BD580BAB72E43C1A451FFAE /* chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 5350E6574BC44F2E957C28C7 /* chevron.png */; };
+		8E39A65B6BD24287B3DE1536 /* SFProText-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D6E3CECC46341C58F166926 /* SFProText-MediumItalic.ttf */; };
+		8EF5FAF3817544319C3C6545 /* gem9.png in Resources */ = {isa = PBXBuildFile; fileRef = D1AB29D44CF141F7B787497C /* gem9.png */; };
+		91A52F59F6974AFE97FCA485 /* gem2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BC2EB0B480341D097DB3126 /* gem2.png */; };
+		94FD644B143E4033BB81EC5E /* random.png in Resources */ = {isa = PBXBuildFile; fileRef = 198232A3C38D416D843F89F8 /* random.png */; };
+		9C1BE8C4673B4F1FB0A60670 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45A3CAD32B7544B8A6E97F41 /* SFProText-Regular.ttf */; };
+		A45F7220276A4A9193A4C619 /* activecollection.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DDF76A0DCB544DB9DB83269 /* activecollection.png */; };
+		A5FB6427D024409CAD13ACCF /* gem1.png in Resources */ = {isa = PBXBuildFile; fileRef = B47B6E7C0AA949EE938E102D /* gem1.png */; };
+		B04888885EF843A394E13660 /* game.png in Resources */ = {isa = PBXBuildFile; fileRef = 671D5934928145CFB9488CB8 /* game.png */; };
+		C294682B890B444993D673B4 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2F8D6908CED4B259506E4FC /* SFProText-Bold.ttf */; };
+		CBCD76E1B87140A5BC2F8001 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC04EB487F73469D88486387 /* SFProText-Semibold.ttf */; };
+		D20903E350414AFAB638D007 /* gem7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B22FEA4D8064ACE84ADFD03 /* gem7.png */; };
+		D4DDB9FB6420476A93CF08CB /* chevrondown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD4AF7E460D478F87F6EF77 /* chevrondown.png */; };
+		DB12B45284C14393ADBF4808 /* gem16.png in Resources */ = {isa = PBXBuildFile; fileRef = 702680FB4C1B47F9ABDE5598 /* gem16.png */; };
+		E06090F7BC2D4D868C06FB0D /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0755F97EB40E467FB354B4CB /* SFProText-Light.ttf */; };
+		E168BC6D4767455ABF5F18C1 /* gem3.png in Resources */ = {isa = PBXBuildFile; fileRef = 514FA7D217FE4FFABF18E45E /* gem3.png */; };
+		F66337793EA84EFE8F83ED4E /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 46DF8FD298AF4F318C485AE4 /* success.png */; };
+		FB3005AB1AD7418C89F8D15C /* gem12.png in Resources */ = {isa = PBXBuildFile; fileRef = 2876CC06EF2E44098C29ECC3 /* gem12.png */; };
+		FBC1F688026B4C8999A2D494 /* closemodal.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A57C88CB154A1F93D17410 /* closemodal.png */; };
+		FC916371E8AD41CD9F4D1E5F /* gem10.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCC1DC92B5C4817A0DD1CB5 /* gem10.png */; };
+		FE9E5B79392C49618368472D /* gem13.png in Resources */ = {isa = PBXBuildFile; fileRef = C40EB981C8764E9EA165CD60 /* gem13.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = starburst;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* starburstTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = starburstTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* starburstTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = starburstTests.m; sourceTree = "<group>"; };
+		0755F97EB40E467FB354B4CB /* SFProText-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Light.ttf"; path = "../src/shared/assets/fonts/SFProText-Light.ttf"; sourceTree = "<group>"; };
+		09AEC3E609F1486EA97FF1C2 /* SFProText-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Heavy.ttf"; path = "../src/shared/assets/fonts/SFProText-Heavy.ttf"; sourceTree = "<group>"; };
+		0ABD3A3141C841DFA85C4FEA /* plus.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = plus.png; path = ../src/shared/assets/plus.png; sourceTree = "<group>"; };
+		0DDF76A0DCB544DB9DB83269 /* activecollection.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = activecollection.png; path = ../src/shared/assets/activecollection.png; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* starburst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = starburst.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = starburst/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = starburst/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = starburst/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = starburst/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = starburst/main.m; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = starburst/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		198232A3C38D416D843F89F8 /* random.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = random.png; path = ../src/shared/assets/random.png; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-starburst-starburstTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-starburst-starburstTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8F4C502A54EFEDC4BD8F26 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = starburst/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		1D3C8ADDC88D446C9D6EDEC7 /* loader.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = loader.png; path = ../src/shared/assets/loader.png; sourceTree = "<group>"; };
+		1F5E5884797D4D549C2E22BC /* activesettings.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = activesettings.png; path = ../src/shared/assets/activesettings.png; sourceTree = "<group>"; };
+		1FD71AF384634C55ABC9580D /* gem14.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem14.png; path = ../src/shared/assets/gem14.png; sourceTree = "<group>"; };
+		2005F0A9B8A64D3AAACDD434 /* edit.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = edit.png; path = ../src/shared/assets/edit.png; sourceTree = "<group>"; };
+		2876CC06EF2E44098C29ECC3 /* gem12.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem12.png; path = ../src/shared/assets/gem12.png; sourceTree = "<group>"; };
+		2DD4AF7E460D478F87F6EF77 /* chevrondown.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = chevrondown.png; path = ../src/shared/assets/chevrondown.png; sourceTree = "<group>"; };
+		2DEADE6C8033439888084996 /* gamesuccess.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gamesuccess.png; path = ../src/shared/assets/gamesuccess.png; sourceTree = "<group>"; };
+		30E820876B864C9AAA3A2D94 /* gem11.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem11.png; path = ../src/shared/assets/gem11.png; sourceTree = "<group>"; };
+		312453354C2646549071F033 /* SFProText-HeavyItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-HeavyItalic.ttf"; path = "../src/shared/assets/fonts/SFProText-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		31B8CC08AEE5417AB2328A4D /* SFProText-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Medium.ttf"; path = "../src/shared/assets/fonts/SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		36B1564B942547F4827491E3 /* SFProText-SemiboldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-SemiboldItalic.ttf"; path = "../src/shared/assets/fonts/SFProText-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		3B22FEA4D8064ACE84ADFD03 /* gem7.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem7.png; path = ../src/shared/assets/gem7.png; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-starburst.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starburst.debug.xcconfig"; path = "Target Support Files/Pods-starburst/Pods-starburst.debug.xcconfig"; sourceTree = "<group>"; };
+		3CA311FD4F6E46FE9E20FBCE /* coin.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = coin.png; path = ../src/shared/assets/coin.png; sourceTree = "<group>"; };
+		45A3CAD32B7544B8A6E97F41 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Regular.ttf"; path = "../src/shared/assets/fonts/SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		46DF8FD298AF4F318C485AE4 /* success.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = success.png; path = ../src/shared/assets/success.png; sourceTree = "<group>"; };
+		514FA7D217FE4FFABF18E45E /* gem3.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem3.png; path = ../src/shared/assets/gem3.png; sourceTree = "<group>"; };
+		5350E6574BC44F2E957C28C7 /* chevron.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = chevron.png; path = ../src/shared/assets/chevron.png; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-starburst.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starburst.release.xcconfig"; path = "Target Support Files/Pods-starburst/Pods-starburst.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-starburst-starburstTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starburst-starburstTests.debug.xcconfig"; path = "Target Support Files/Pods-starburst-starburstTests/Pods-starburst-starburstTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-starburst.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-starburst.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		671D5934928145CFB9488CB8 /* game.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = game.png; path = ../src/shared/assets/game.png; sourceTree = "<group>"; };
+		6A88781A2CFDE5D600CAB335 /* starburst.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = starburst.entitlements; path = starburst/starburst.entitlements; sourceTree = "<group>"; };
+		6D6E3CECC46341C58F166926 /* SFProText-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-MediumItalic.ttf"; path = "../src/shared/assets/fonts/SFProText-MediumItalic.ttf"; sourceTree = "<group>"; };
+		702680FB4C1B47F9ABDE5598 /* gem16.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem16.png; path = ../src/shared/assets/gem16.png; sourceTree = "<group>"; };
+		7BBEC468DB084D9F975DE5C3 /* SFProText-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-BoldItalic.ttf"; path = "../src/shared/assets/fonts/SFProText-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7BC2EB0B480341D097DB3126 /* gem2.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem2.png; path = ../src/shared/assets/gem2.png; sourceTree = "<group>"; };
+		81A57C88CB154A1F93D17410 /* closemodal.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = closemodal.png; path = ../src/shared/assets/closemodal.png; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = starburst/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8442DDC97A494E02AAE0C3DA /* SFProText-RegularItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-RegularItalic.ttf"; path = "../src/shared/assets/fonts/SFProText-RegularItalic.ttf"; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-starburst-starburstTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-starburst-starburstTests.release.xcconfig"; path = "Target Support Files/Pods-starburst-starburstTests/Pods-starburst-starburstTests.release.xcconfig"; sourceTree = "<group>"; };
+		8A47215A2A4545B1AFE80EA1 /* shop.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = shop.png; path = ../src/shared/assets/shop.png; sourceTree = "<group>"; };
+		9667890C5FA54A818FB37788 /* gem5.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem5.png; path = ../src/shared/assets/gem5.png; sourceTree = "<group>"; };
+		A26D1FE5849043C3AFE4EDF9 /* activegame.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = activegame.png; path = ../src/shared/assets/activegame.png; sourceTree = "<group>"; };
+		A4CD157D8D30414DA835F67A /* gem15.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem15.png; path = ../src/shared/assets/gem15.png; sourceTree = "<group>"; };
+		AC6E70AD5EA64246AF0827CE /* gem6.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem6.png; path = ../src/shared/assets/gem6.png; sourceTree = "<group>"; };
+		ADCC1DC92B5C4817A0DD1CB5 /* gem10.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem10.png; path = ../src/shared/assets/gem10.png; sourceTree = "<group>"; };
+		B2F8D6908CED4B259506E4FC /* SFProText-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Bold.ttf"; path = "../src/shared/assets/fonts/SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		B47B6E7C0AA949EE938E102D /* gem1.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem1.png; path = ../src/shared/assets/gem1.png; sourceTree = "<group>"; };
+		B9B82318A6924D7BAD2640C3 /* collection.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = collection.png; path = ../src/shared/assets/collection.png; sourceTree = "<group>"; };
+		BE2C4BCED62347338051EE1E /* sadsmile.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = sadsmile.png; path = ../src/shared/assets/sadsmile.png; sourceTree = "<group>"; };
+		C40EB981C8764E9EA165CD60 /* gem13.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem13.png; path = ../src/shared/assets/gem13.png; sourceTree = "<group>"; };
+		C89E9658A9C64A95A8A3B585 /* activeshop.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = activeshop.png; path = ../src/shared/assets/activeshop.png; sourceTree = "<group>"; };
+		CAAC2D9236D04A5B8131E51F /* purchase.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = purchase.png; path = ../src/shared/assets/purchase.png; sourceTree = "<group>"; };
+		CDF6FBB45834497AA894EA4D /* close.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = close.png; path = ../src/shared/assets/close.png; sourceTree = "<group>"; };
+		CE184F5FFFC74F51A1512EDD /* chevronup.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = chevronup.png; path = ../src/shared/assets/chevronup.png; sourceTree = "<group>"; };
+		D1AB29D44CF141F7B787497C /* gem9.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem9.png; path = ../src/shared/assets/gem9.png; sourceTree = "<group>"; };
+		DB34361DD34B425489A555B8 /* cards.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = cards.png; path = ../src/shared/assets/cards.png; sourceTree = "<group>"; };
+		EAA4FD6C3A7348618062938D /* arrow.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = arrow.png; path = ../src/shared/assets/arrow.png; sourceTree = "<group>"; };
+		EC04EB487F73469D88486387 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Semibold.ttf"; path = "../src/shared/assets/fonts/SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EEB08DF83D8A4C079500CA92 /* gem4.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem4.png; path = ../src/shared/assets/gem4.png; sourceTree = "<group>"; };
+		EF2A427F90B44408AD244971 /* gem8.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = gem8.png; path = ../src/shared/assets/gem8.png; sourceTree = "<group>"; };
+		F77A5B601011494486F3CE18 /* settings.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = settings.png; path = ../src/shared/assets/settings.png; sourceTree = "<group>"; };
+		F909BEFE0255480C8F9D86AC /* SFProText-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-LightItalic.ttf"; path = "../src/shared/assets/fonts/SFProText-LightItalic.ttf"; sourceTree = "<group>"; };
+		FD39812E07B448B999910134 /* bg.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = bg.png; path = ../src/shared/assets/bg.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-starburst-starburstTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-starburst.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* starburstTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* starburstTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = starburstTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* starburst */ = {
+			isa = PBXGroup;
+			children = (
+				6A88781A2CFDE5D600CAB335 /* starburst.entitlements */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				1A8F4C502A54EFEDC4BD8F26 /* PrivacyInfo.xcprivacy */,
+			);
+			name = starburst;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-starburst.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-starburst-starburstTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32DA617C696D43099355DC3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2F8D6908CED4B259506E4FC /* SFProText-Bold.ttf */,
+				7BBEC468DB084D9F975DE5C3 /* SFProText-BoldItalic.ttf */,
+				09AEC3E609F1486EA97FF1C2 /* SFProText-Heavy.ttf */,
+				312453354C2646549071F033 /* SFProText-HeavyItalic.ttf */,
+				0755F97EB40E467FB354B4CB /* SFProText-Light.ttf */,
+				F909BEFE0255480C8F9D86AC /* SFProText-LightItalic.ttf */,
+				31B8CC08AEE5417AB2328A4D /* SFProText-Medium.ttf */,
+				6D6E3CECC46341C58F166926 /* SFProText-MediumItalic.ttf */,
+				45A3CAD32B7544B8A6E97F41 /* SFProText-Regular.ttf */,
+				8442DDC97A494E02AAE0C3DA /* SFProText-RegularItalic.ttf */,
+				EC04EB487F73469D88486387 /* SFProText-Semibold.ttf */,
+				36B1564B942547F4827491E3 /* SFProText-SemiboldItalic.ttf */,
+				0DDF76A0DCB544DB9DB83269 /* activecollection.png */,
+				A26D1FE5849043C3AFE4EDF9 /* activegame.png */,
+				1F5E5884797D4D549C2E22BC /* activesettings.png */,
+				C89E9658A9C64A95A8A3B585 /* activeshop.png */,
+				EAA4FD6C3A7348618062938D /* arrow.png */,
+				FD39812E07B448B999910134 /* bg.png */,
+				DB34361DD34B425489A555B8 /* cards.png */,
+				5350E6574BC44F2E957C28C7 /* chevron.png */,
+				2DD4AF7E460D478F87F6EF77 /* chevrondown.png */,
+				CE184F5FFFC74F51A1512EDD /* chevronup.png */,
+				CDF6FBB45834497AA894EA4D /* close.png */,
+				81A57C88CB154A1F93D17410 /* closemodal.png */,
+				3CA311FD4F6E46FE9E20FBCE /* coin.png */,
+				B9B82318A6924D7BAD2640C3 /* collection.png */,
+				2005F0A9B8A64D3AAACDD434 /* edit.png */,
+				671D5934928145CFB9488CB8 /* game.png */,
+				2DEADE6C8033439888084996 /* gamesuccess.png */,
+				B47B6E7C0AA949EE938E102D /* gem1.png */,
+				ADCC1DC92B5C4817A0DD1CB5 /* gem10.png */,
+				30E820876B864C9AAA3A2D94 /* gem11.png */,
+				2876CC06EF2E44098C29ECC3 /* gem12.png */,
+				C40EB981C8764E9EA165CD60 /* gem13.png */,
+				1FD71AF384634C55ABC9580D /* gem14.png */,
+				A4CD157D8D30414DA835F67A /* gem15.png */,
+				702680FB4C1B47F9ABDE5598 /* gem16.png */,
+				7BC2EB0B480341D097DB3126 /* gem2.png */,
+				514FA7D217FE4FFABF18E45E /* gem3.png */,
+				EEB08DF83D8A4C079500CA92 /* gem4.png */,
+				9667890C5FA54A818FB37788 /* gem5.png */,
+				AC6E70AD5EA64246AF0827CE /* gem6.png */,
+				3B22FEA4D8064ACE84ADFD03 /* gem7.png */,
+				EF2A427F90B44408AD244971 /* gem8.png */,
+				D1AB29D44CF141F7B787497C /* gem9.png */,
+				1D3C8ADDC88D446C9D6EDEC7 /* loader.png */,
+				0ABD3A3141C841DFA85C4FEA /* plus.png */,
+				CAAC2D9236D04A5B8131E51F /* purchase.png */,
+				198232A3C38D416D843F89F8 /* random.png */,
+				BE2C4BCED62347338051EE1E /* sadsmile.png */,
+				F77A5B601011494486F3CE18 /* settings.png */,
+				8A47215A2A4545B1AFE80EA1 /* shop.png */,
+				46DF8FD298AF4F318C485AE4 /* success.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* starburst */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* starburstTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				32DA617C696D43099355DC3F /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* starburst.app */,
+				00E356EE1AD99517003FC87E /* starburstTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-starburst.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-starburst.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-starburst-starburstTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-starburst-starburstTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* starburstTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "starburstTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = starburstTests;
+			productName = starburstTests;
+			productReference = 00E356EE1AD99517003FC87E /* starburstTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* starburst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "starburst" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = starburst;
+			productName = starburst;
+			productReference = 13B07F961A680F5B00A75B9A /* starburst.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "starburst" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* starburst */,
+				00E356ED1AD99517003FC87E /* starburstTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C294682B890B444993D673B4 /* SFProText-Bold.ttf in Resources */,
+				0DEC97EA140E4E1ABAFAA3A0 /* SFProText-BoldItalic.ttf in Resources */,
+				23655E8F7960443C85A08143 /* SFProText-Heavy.ttf in Resources */,
+				7F35A22E70414113A2EBBFBF /* SFProText-HeavyItalic.ttf in Resources */,
+				E06090F7BC2D4D868C06FB0D /* SFProText-Light.ttf in Resources */,
+				2B9790AA0437438392EE19E5 /* SFProText-LightItalic.ttf in Resources */,
+				62486CBABEFC470BB716B86C /* SFProText-Medium.ttf in Resources */,
+				8E39A65B6BD24287B3DE1536 /* SFProText-MediumItalic.ttf in Resources */,
+				9C1BE8C4673B4F1FB0A60670 /* SFProText-Regular.ttf in Resources */,
+				1968A3BF5ED940A2B27D7655 /* SFProText-RegularItalic.ttf in Resources */,
+				CBCD76E1B87140A5BC2F8001 /* SFProText-Semibold.ttf in Resources */,
+				3556A378512149C39075C0E3 /* SFProText-SemiboldItalic.ttf in Resources */,
+				A45F7220276A4A9193A4C619 /* activecollection.png in Resources */,
+				1F21053DC4024CB3B153783F /* activegame.png in Resources */,
+				018177E2A8394AFBB3D39316 /* activesettings.png in Resources */,
+				67D844D7E4114F3EB1CD8852 /* activeshop.png in Resources */,
+				6079C5895B0C47EA8EB8607C /* arrow.png in Resources */,
+				58B0CFEEBB35427E9920BAA4 /* bg.png in Resources */,
+				5E6AE9EC590E48F7A8870883 /* cards.png in Resources */,
+				8BD580BAB72E43C1A451FFAE /* chevron.png in Resources */,
+				D4DDB9FB6420476A93CF08CB /* chevrondown.png in Resources */,
+				5CBA878BDEAC4E08908A09DC /* chevronup.png in Resources */,
+				620F3D26B53D45C7A1D4DBFC /* close.png in Resources */,
+				FBC1F688026B4C8999A2D494 /* closemodal.png in Resources */,
+				3280E2A584C845BC91FCCEC3 /* coin.png in Resources */,
+				67303F5005B9496BB63C5F51 /* collection.png in Resources */,
+				5D56BCC8127B4DDBB57672B9 /* edit.png in Resources */,
+				B04888885EF843A394E13660 /* game.png in Resources */,
+				696D38327D3747A8BCBBEA45 /* gamesuccess.png in Resources */,
+				A5FB6427D024409CAD13ACCF /* gem1.png in Resources */,
+				FC916371E8AD41CD9F4D1E5F /* gem10.png in Resources */,
+				39D04B3157994D35A8D5866C /* gem11.png in Resources */,
+				FB3005AB1AD7418C89F8D15C /* gem12.png in Resources */,
+				FE9E5B79392C49618368472D /* gem13.png in Resources */,
+				34241EF837754242B2435B88 /* gem14.png in Resources */,
+				717A2C78836F447F8FBBF2AC /* gem15.png in Resources */,
+				DB12B45284C14393ADBF4808 /* gem16.png in Resources */,
+				91A52F59F6974AFE97FCA485 /* gem2.png in Resources */,
+				E168BC6D4767455ABF5F18C1 /* gem3.png in Resources */,
+				5FA78D2E59BA4393ADF48ECB /* gem4.png in Resources */,
+				4A078E0B12E348C884A9C10F /* gem5.png in Resources */,
+				0C4683FBC6EA4013A57B64A8 /* gem6.png in Resources */,
+				D20903E350414AFAB638D007 /* gem7.png in Resources */,
+				0409FA4EBE5D49EBA92901D6 /* gem8.png in Resources */,
+				8EF5FAF3817544319C3C6545 /* gem9.png in Resources */,
+				3F5DB8A0A2E74B0193EDE557 /* loader.png in Resources */,
+				2C270F94E8ED4B8B92E928C4 /* plus.png in Resources */,
+				0E35F73BFC624E7D982F4282 /* purchase.png in Resources */,
+				94FD644B143E4033BB81EC5E /* random.png in Resources */,
+				2C24ED573DA74907AB9041A6 /* sadsmile.png in Resources */,
+				4CF05B088EEB4F179CB9976B /* settings.png in Resources */,
+				25FDB3804B3849B3BABA952C /* shop.png in Resources */,
+				F66337793EA84EFE8F83ED4E /* success.png in Resources */,
+				1F19C843BDC91408159DA473 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starburst/Pods-starburst-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starburst/Pods-starburst-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-starburst/Pods-starburst-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-starburst-starburstTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-starburst-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starburst-starburstTests/Pods-starburst-starburstTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starburst-starburstTests/Pods-starburst-starburstTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-starburst-starburstTests/Pods-starburst-starburstTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starburst/Pods-starburst-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starburst/Pods-starburst-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-starburst/Pods-starburst-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starburst-starburstTests/Pods-starburst-starburstTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-starburst-starburstTests/Pods-starburst-starburstTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-starburst-starburstTests/Pods-starburst-starburstTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* starburstTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* starburst */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-starburst-starburstTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = starburstTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starburst.app/starburst";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-starburst-starburstTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = starburstTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/starburst.app/starburst";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-starburst.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = starburst/starburst.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = starburst/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starstone.app;
+				PRODUCT_NAME = starburst;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-starburst.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = starburst/starburst.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = starburst/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starstone.app;
+				PRODUCT_NAME = starburst;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CXX = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CXX = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
+				);
+				OTHER_LDFLAGS = "$(inherited)  ";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "starburstTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "starburst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "starburst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

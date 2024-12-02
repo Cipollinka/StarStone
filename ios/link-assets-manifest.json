@@ -1,0 +1,217 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/shared/assets/activecollection.png",
+      "sha1": "224ff8540d711c96da5949370d53c6ab7198876f"
+    },
+    {
+      "path": "src/shared/assets/activegame.png",
+      "sha1": "bbb22afc097726d1ce9f8bba9772d1fe92c85792"
+    },
+    {
+      "path": "src/shared/assets/activesettings.png",
+      "sha1": "78e22ed82bfc437f01366239bdde205ab1974259"
+    },
+    {
+      "path": "src/shared/assets/activeshop.png",
+      "sha1": "32b1324b0de0f771c2d6a9e437880284163fbb0b"
+    },
+    {
+      "path": "src/shared/assets/arrow.png",
+      "sha1": "bba7214e1973e74e1fe3afa0351a23f244fb7a7a"
+    },
+    {
+      "path": "src/shared/assets/bg.png",
+      "sha1": "9033ca6c7c3cf46d73bfd858cac55f0d976f1f60"
+    },
+    {
+      "path": "src/shared/assets/cards.png",
+      "sha1": "641bd0cdbb27d2e5b4970830e2c26343a7ad1e52"
+    },
+    {
+      "path": "src/shared/assets/chevron.png",
+      "sha1": "8b1088e7b9698e5e5526931f3342ec4fe6dbf2e8"
+    },
+    {
+      "path": "src/shared/assets/chevrondown.png",
+      "sha1": "450cdb727ac0dde62e9980437cb65c37e54678aa"
+    },
+    {
+      "path": "src/shared/assets/chevronup.png",
+      "sha1": "ca2bdb9bf2ad835cc8bd055fb3571a009aaf3100"
+    },
+    {
+      "path": "src/shared/assets/close.png",
+      "sha1": "0221b907b7f7ee392555df5521a0668d69a050df"
+    },
+    {
+      "path": "src/shared/assets/closemodal.png",
+      "sha1": "95739450885a440ebc54e97409924c74ed010dea"
+    },
+    {
+      "path": "src/shared/assets/coin.png",
+      "sha1": "cf32a460209bb9e96438e3723b20c7ab13f37cf7"
+    },
+    {
+      "path": "src/shared/assets/collection.png",
+      "sha1": "9a4a83a20c9635dfc4ad2b706460241a79ccc27c"
+    },
+    {
+      "path": "src/shared/assets/edit.png",
+      "sha1": "58bdaaba93e290e610e97209c39ac4b955a3499f"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-Bold.ttf",
+      "sha1": "632e6cea171b276e5dd1f13b152c702fbf562cee"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-BoldItalic.ttf",
+      "sha1": "bcc0ffef34f9ab3040ab258fe4d18d348327d39a"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-Heavy.ttf",
+      "sha1": "bfc75c545dbe2a8c7c3d6d6223e42aaa5ccb9432"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-HeavyItalic.ttf",
+      "sha1": "453fa152033f6dabeccd76acb8b233506a1fb900"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-Light.ttf",
+      "sha1": "ecc8da32c2eac6044c807e945375180b7cda3a20"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-LightItalic.ttf",
+      "sha1": "ba64b1f9682eaf3f690a32780f557c04d6e580bb"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-Medium.ttf",
+      "sha1": "3b8df618cd23e83843b16a8a32de1ddc9de44df4"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-MediumItalic.ttf",
+      "sha1": "ac53a637876a86217ad500f0046ac87ad37bd4c5"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-Regular.ttf",
+      "sha1": "b4893462f2289df6978f9462a63db9e64bcc9342"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-RegularItalic.ttf",
+      "sha1": "85063cfc8ebaa6d2605c794a41d23722bd508fc5"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-Semibold.ttf",
+      "sha1": "9560ae412d73c7c9af72333db50464b4e597b0f9"
+    },
+    {
+      "path": "src/shared/assets/fonts/SFProText-SemiboldItalic.ttf",
+      "sha1": "a0894273595c5a45a366bb4fbc045e7d82a9ba41"
+    },
+    {
+      "path": "src/shared/assets/game.png",
+      "sha1": "5a0f62c432fb24e052c4755d16baaafaa8c92367"
+    },
+    {
+      "path": "src/shared/assets/gamesuccess.png",
+      "sha1": "9f75d984b05ea50714a1e347d32ec89c1f3dd0a9"
+    },
+    {
+      "path": "src/shared/assets/gem1.png",
+      "sha1": "92ad30d29bb0738e1dc026dbdacb548eea7b5cfd"
+    },
+    {
+      "path": "src/shared/assets/gem10.png",
+      "sha1": "0b2c205516d9ac81d2c3ab4617a77433870082af"
+    },
+    {
+      "path": "src/shared/assets/gem11.png",
+      "sha1": "a0200fdb20bfdb456675698b9499a5a93cdfd01b"
+    },
+    {
+      "path": "src/shared/assets/gem12.png",
+      "sha1": "91cc1b947e1d3f66847d66c083441d2b647915ee"
+    },
+    {
+      "path": "src/shared/assets/gem13.png",
+      "sha1": "51c332e353ef7a65b7d066011fc82299f72db309"
+    },
+    {
+      "path": "src/shared/assets/gem14.png",
+      "sha1": "6552ed6219cbf48a595474a2824497dbca2e7d1e"
+    },
+    {
+      "path": "src/shared/assets/gem15.png",
+      "sha1": "4266b38d92d67d25ade5f3f32862f374a132c0fe"
+    },
+    {
+      "path": "src/shared/assets/gem16.png",
+      "sha1": "35cb53ee29c162a729d7ae63cea8da1cf30bc3cc"
+    },
+    {
+      "path": "src/shared/assets/gem2.png",
+      "sha1": "120560260bc7ee616015187bc6bcb3310c7b9009"
+    },
+    {
+      "path": "src/shared/assets/gem3.png",
+      "sha1": "9f68cb91dbd4187147b57a0b377a861f5e90a042"
+    },
+    {
+      "path": "src/shared/assets/gem4.png",
+      "sha1": "a495189ac5441154308776ab78986a390264aa54"
+    },
+    {
+      "path": "src/shared/assets/gem5.png",
+      "sha1": "93317ea542feb8a280d649a7988c4b3cbc1af905"
+    },
+    {
+      "path": "src/shared/assets/gem6.png",
+      "sha1": "8bc04abcb8d64d43ecafbd0b377da44760ae0b35"
+    },
+    {
+      "path": "src/shared/assets/gem7.png",
+      "sha1": "caabe36973edd91e49699293cf23e73fe169aab0"
+    },
+    {
+      "path": "src/shared/assets/gem8.png",
+      "sha1": "02f886d75264621950a809bc8bf555930b9e640e"
+    },
+    {
+      "path": "src/shared/assets/gem9.png",
+      "sha1": "d4bf3e2d6eaca169a7519e686040244302bd7e71"
+    },
+    {
+      "path": "src/shared/assets/loader.png",
+      "sha1": "0d8405b2023ee82be4cfe0f91c6b26499185e826"
+    },
+    {
+      "path": "src/shared/assets/plus.png",
+      "sha1": "07fc44042a9190aeccb7c49e6bb521e782a8fe71"
+    },
+    {
+      "path": "src/shared/assets/purchase.png",
+      "sha1": "0925a57428ee3d22e6c52a6c806555e302457328"
+    },
+    {
+      "path": "src/shared/assets/random.png",
+      "sha1": "f9a3d2fc1ffd105fa60668271675c4db1c7580ba"
+    },
+    {
+      "path": "src/shared/assets/sadsmile.png",
+      "sha1": "6248537f77f8a263257baa51cc19b06d37a178d9"
+    },
+    {
+      "path": "src/shared/assets/settings.png",
+      "sha1": "1473121baa6ac77792cba7530aeda8e61ad8f58c"
+    },
+    {
+      "path": "src/shared/assets/shop.png",
+      "sha1": "2bd78d497b2cce35295c1bc73cc18b52d8bc48c0"
+    },
+    {
+      "path": "src/shared/assets/success.png",
+      "sha1": "646c2e26acb9bb693ad1d8b70f92526e2de72301"
+    }
+  ]
+}
