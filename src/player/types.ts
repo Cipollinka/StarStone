@@ -1,11 +1,18 @@
 import { ImageSourcePropType } from "react-native";
 
 export interface UserProfileData {
+  userName: string;
+  avatar?: string;
+  about: string;
   stones: Stone[];
   boughtStones: string[];
   score: number;
   transactions: Transaction[];
   collections: Collection[];
+  isOnboardingCompleted: boolean;
+  lastDailyHoldResult: number;
+  lastDailyHoldDate: number;
+  completedLevels: number;
 }
 
 export interface Collection {

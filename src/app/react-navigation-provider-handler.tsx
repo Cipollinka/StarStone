@@ -5,16 +5,25 @@ import {
 } from '../shared/use-react-native-navigation.ts';
 import {useUserDataProfile} from '../player';
 
-export const ReactNavigationProviderHandler = ({children}: {children: ReactNode}) => {
+export const ReactNavigationProviderHandler = ({
+  children,
+}: {
+  children: ReactNode;
+}) => {
   const {navigateToScreen} = useReactNativeNavigation();
 
-  const { isDataLoading} = useUserDataProfile();
+  const {userProfile, isDataLoading} = useUserDataProfile();
   useEffect(() => {
     if (isDataLoading) {
       return;
     }
+    if (!userProfile?.isOnboardingCompleted) {
+      navigateToScreen(ScreensRoads.Onboarding);
+
+      return;
+    }
     navigateToScreen(ScreensRoads.Catalogue);
-  }, [isDataLoading]);
+  }, [isDataLoading, userProfile?.isOnboardingCompleted]);
 
   return <>{children}</>;
 };

@@ -1,5 +1,12 @@
 import React, {FC, useMemo, useState} from 'react';
-import {Image, ScrollView, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Image,
+  ScrollView,
+  Share,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {RootStackParamList} from './';
 import {NativeStackScreenProps} from 'react-native-screens/native-stack';
 import {
@@ -60,17 +67,42 @@ export const StoneScreen: FC<DetailsScreenProps> = ({route}) => {
             Back
           </Text>
         </TouchableOpacity>
-        <Text
+        <View
           style={{
+            alignItems: 'center',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
             paddingRight: 16,
             paddingLeft: 16,
-            fontFamily: 'SfPro',
-            color: '#fff',
-            fontSize: 34,
-            lineHeight: 41,
           }}>
-          {stone?.title}
-        </Text>
+          <Text
+            style={{
+              fontFamily: 'SfPro',
+              color: '#fff',
+              fontSize: 34,
+              lineHeight: 41,
+            }}>
+            {stone?.title}
+          </Text>
+
+          <TouchableOpacity
+            onPress={() => {
+              Share.share({
+                title: `Check out this stone: ${stone.title}`,
+                message: stone.description,
+              });
+            }}>
+            <Text
+              style={{
+                fontFamily: 'SfPro',
+                color: '#A45DFB',
+                fontSize: 17,
+                lineHeight: 22,
+              }}>
+              Share
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
       <ScrollView
         style={{
@@ -112,7 +144,7 @@ export const StoneScreen: FC<DetailsScreenProps> = ({route}) => {
       {isPurchased && !isFromCollection && (
         <TouchableOpacity
           onPress={() => {
-            setOpened(true)
+            setOpened(true);
             console.log('Add to collection');
           }}
           style={{

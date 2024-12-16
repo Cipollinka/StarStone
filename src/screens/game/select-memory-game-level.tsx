@@ -4,12 +4,14 @@ import {NativeStackScreenProps} from 'react-native-screens/native-stack';
 import {ScreensRoads} from '../../shared/use-react-native-navigation.ts';
 import {RootStackParamList} from '..';
 
-type HomeScreenProps = NativeStackScreenProps<
+type SelectMemoryGameLevelProps = NativeStackScreenProps<
   RootStackParamList,
-  ScreensRoads.Game
+  ScreensRoads.SelectMemoryGameLevel
 >;
 
-export const GameScreen: FC<HomeScreenProps> = ({navigation}) => {
+export const SelectMemoryGameLevel: FC<SelectMemoryGameLevelProps> = ({
+  navigation,
+}) => {
   return (
     <View
       style={{
@@ -20,6 +22,27 @@ export const GameScreen: FC<HomeScreenProps> = ({navigation}) => {
         // alignItems: 'center',
         // justifyContent: 'center',
       }}>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.goBack();
+        }}
+        style={{
+          paddingLeft: 8,
+          height: 44,
+          gap: 6,
+          alignItems: 'center',
+          flexDirection: 'row',
+        }}>
+        <Image source={require('../../shared/assets/chevron.png')} />
+        <Text
+          style={{
+            color: 'rgba(164, 93, 251, 1)',
+            fontSize: 17,
+            fontFamily: 'SFProText-Regular',
+          }}>
+          Back
+        </Text>
+      </TouchableOpacity>
       <Text
         style={{
           fontSize: 34,
@@ -28,7 +51,7 @@ export const GameScreen: FC<HomeScreenProps> = ({navigation}) => {
           fontFamily: 'SFProText-Bold',
           marginBottom: 12,
         }}>
-        Select a game
+        Select a level
       </Text>
       <Text
         style={{
@@ -37,7 +60,7 @@ export const GameScreen: FC<HomeScreenProps> = ({navigation}) => {
           fontFamily: 'SFProText-Regular',
           marginBottom: 33,
         }}>
-        You can farm coins to buy new stones and compete games
+        You will need to guess matching cards with gemstones
       </Text>
       <ScrollView
         contentContainerStyle={{
@@ -46,27 +69,39 @@ export const GameScreen: FC<HomeScreenProps> = ({navigation}) => {
         }}>
         <GameButton
           color="#DC97F8"
-          description="3 lvls"
-          title="Stone Cards"
+          title="Easy"
+          cards={8}
+          reward={1.2}
           onPress={() => {
-            navigation.navigate(ScreensRoads.SelectMemoryGameLevel);
+            navigation.navigate(ScreensRoads.Play, {
+              cards: 8,
+              title: 'Easy Level',
+            });
           }}
         />
 
         <GameButton
           color="#A45DFB"
-          title="Hold stone"
-          description="Daily"
+          title="Medium"
+          cards={16}
+          reward={2.4}
           onPress={() => {
-            navigation.navigate(ScreensRoads.HoldStone);
+            navigation.navigate(ScreensRoads.Play, {
+              cards: 16,
+              title: 'Medium Level',
+            });
           }}
         />
         <GameButton
           color="#602BC8"
-          title="Tap to win"
-          description="3 lvls"
+          title="Hard"
+          cards={32}
+          reward={4.8}
           onPress={() => {
-            navigation.navigate(ScreensRoads.SelectTapToWinGame);
+            navigation.navigate(ScreensRoads.Play, {
+              cards: 32,
+              title: 'Hard Level',
+            });
           }}
         />
       </ScrollView>
@@ -74,26 +109,23 @@ export const GameScreen: FC<HomeScreenProps> = ({navigation}) => {
         onPress={() => {
           const availableCards = [
             {
-              title: 'Stone Cards',
-              onPress: () => {
-                navigation.navigate(ScreensRoads.SelectMemoryGameLevel);
-              },
+              title: 'Easy Level',
+              cards: 8,
             },
             {
-              title: 'Hold stone',
-              onPress: () => {
-                navigation.navigate(ScreensRoads.HoldStone);
-              },
+              title: 'Medium Level',
+              cards: 16,
             },
             {
-              title: 'Tap to win',
-              onPress: () => {
-                navigation.navigate(ScreensRoads.SelectTapToWinGame);
-              },
+              title: 'Hard Level',
+              cards: 32,
             },
           ];
           const random = Math.floor(Math.random() * availableCards.length);
-          availableCards[random].onPress();
+          navigation.navigate(ScreensRoads.Play, {
+            cards: availableCards[random].cards,
+            title: availableCards[random].title,
+          });
         }}
         style={{
           bottom: 20,
@@ -125,12 +157,13 @@ export const GameScreen: FC<HomeScreenProps> = ({navigation}) => {
 
 interface Props {
   onPress: () => void;
+  reward: number;
   title: string;
-  description: string;
+  cards: number;
   color: string;
 }
 
-const GameButton: FC<Props> = ({onPress, description, title, color}) => {
+const GameButton: FC<Props> = ({onPress, reward, title, cards, color}) => {
   return (
     <TouchableOpacity
       onPress={onPress}
@@ -166,7 +199,7 @@ const GameButton: FC<Props> = ({onPress, description, title, color}) => {
             color: '#FFFFFF',
             fontFamily: 'SFProText-Regular',
           }}>
-          {description}
+          Reward:
         </Text>
       </View>
       <View
@@ -176,6 +209,50 @@ const GameButton: FC<Props> = ({onPress, description, title, color}) => {
           flexDirection: 'row',
           gap: 12,
         }}>
+        <View
+          style={{
+            height: '100%',
+            justifyContent: 'space-between',
+          }}>
+          <View
+            style={{
+              gap: 4,
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}>
+            <Text
+              style={{
+                color: '#FFFFFF',
+                fontSize: 24,
+                fontFamily: 'SFProText-Bold',
+              }}>
+              {cards}
+            </Text>
+            <Image source={require('../../shared/assets/cards.png')} />
+          </View>
+          <View
+            style={{
+              gap: 4,
+              flexDirection: 'row',
+              alignItems: 'center',
+            }}>
+            <Text
+              style={{
+                color: '#FFFFFF',
+                fontSize: 16,
+                fontFamily: 'SFProText-Regular',
+              }}>
+              {reward}
+            </Text>
+            <Image
+              style={{
+                width: 21,
+                height: 21,
+              }}
+              source={require('../../shared/assets/coin.png')}
+            />
+          </View>
+        </View>
         <Image source={require('../../shared/assets/arrow.png')} />
       </View>
     </TouchableOpacity>

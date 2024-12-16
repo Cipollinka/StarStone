@@ -9,6 +9,13 @@ const defaultUserDataState: UserProfileData = {
   boughtStones: [],
   collections: [],
   score: 0,
+  isOnboardingCompleted: false,
+  userName: '',
+  avatar: undefined,
+  about: '',
+  lastDailyHoldResult: 0,
+  lastDailyHoldDate: 0,
+  completedLevels: 1,
 };
 
 export const useUserProfileDataStorage = () => {

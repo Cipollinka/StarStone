@@ -25,10 +25,15 @@ export const useReactNativeNavigation = () => {
 };
 
 export enum ScreensRoads {
+  GemTapGame = 'GemTapGame',
+  SelectTapToWinGame = 'SelectTapToWinGame',
+  SelectMemoryGameLevel = 'SelectMemoryGameLevel',
   Loader = 'Loader',
+  HoldStone = 'HoldStone',
   CreateCollection = 'CreateCollection',
   Settings = 'Settings',
   Catalogue = 'Catalogue',
+  Onboarding = 'Onboarding',
   EditCollection = 'EditCollection',
   AddStone = 'AddStone',
   Collection = 'Collection',

@@ -25,6 +25,11 @@ import {StoneScreen} from './stone.tsx';
 import {CreateCollectionScreen} from './create-collection.tsx';
 import {CollectionScreen} from './collection.tsx';
 import {EditCollectionScreen} from './edit-collection.tsx';
+import {OnboardingScreen} from './onboarding';
+import {SelectMemoryGameLevel} from './game/select-memory-game-level.tsx';
+import {HoldStoneScreen} from './game/hold-stone.tsx';
+import {SelectTapToWinGameScreen} from './game/select-tap-to-win-game.tsx';
+import GemTapGame from './game/tap-to-win.tsx';
 
 export type RootStackParamList = {
   [ScreensRoads.Settings]: undefined; // No params
@@ -32,7 +37,14 @@ export type RootStackParamList = {
   [ScreensRoads.Catalogue]: undefined; // No params
   [ScreensRoads.AddStone]: undefined; // No params
   [ScreensRoads.CreateCollection]: undefined; // No params
+  [ScreensRoads.Onboarding]: undefined; // No params
+  [ScreensRoads.SelectMemoryGameLevel]: undefined; // No params
+  [ScreensRoads.HoldStone]: undefined; // No params
   [ScreensRoads.Collection]: undefined; // No params
+  [ScreensRoads.SelectTapToWinGame]: undefined; // No params
+  [ScreensRoads.GemTapGame]: {
+    usefulPercentage: number;
+  }; // No params
   [ScreensRoads.EditCollection]: {
     collectionId: string;
   }; // No params
@@ -67,9 +79,26 @@ export const Screens = () => {
           }}
           initialRouteName={ScreensRoads.Loader}>
           <Stack.Screen name={ScreensRoads.Loader} component={LoadingScreen} />
+          <Stack.Screen name={ScreensRoads.GemTapGame} component={GemTapGame} />
+          <Stack.Screen
+            name={ScreensRoads.HoldStone}
+            component={HoldStoneScreen}
+          />
+          <Stack.Screen
+            name={ScreensRoads.SelectTapToWinGame}
+            component={SelectTapToWinGameScreen}
+          />
           <Stack.Screen
             name={ScreensRoads.AddStone}
             component={AddStoneScreen}
+          />
+          <Stack.Screen
+            name={ScreensRoads.Onboarding}
+            component={OnboardingScreen}
+          />
+          <Stack.Screen
+            name={ScreensRoads.SelectMemoryGameLevel}
+            component={SelectMemoryGameLevel}
           />
           <Stack.Screen name={ScreensRoads.Stone} component={StoneScreen} />
           <Stack.Screen name={ScreensRoads.Game} component={GameScreen} />
@@ -118,7 +147,10 @@ export const Navigation = () => {
     ScreensRoads.Collection,
     ScreensRoads.Game,
   ];
-  if (!currentlyOpenedScreen || !navigationActiveScreens.includes(currentlyOpenedScreen))
+  if (
+    !currentlyOpenedScreen ||
+    !navigationActiveScreens.includes(currentlyOpenedScreen)
+  )
     return null;
   return (
     <View
