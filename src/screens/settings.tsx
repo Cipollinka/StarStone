@@ -1,16 +1,15 @@
 import React, {useState} from 'react';
 import {
-  Alert,
-  FlatList,
-  Image,
-  ImageSourcePropType,
-  Linking,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  View,
+    Alert,
+    FlatList,
+    Image,
+    ImageSourcePropType, Linking,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TextInput,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 import {useUserDataProfile} from '../player';
 import {
@@ -183,20 +182,10 @@ export const SettingsScreen = () => {
         ) : undefined}
       </ScrollView>
       <View style={styles.footer}>
-        <TouchableOpacity
-          onPress={() => {
-            Linking.openURL(
-              'https://www.termsfeed.com/live/ef8b58c3-5ebf-489d-bdf2-603ff04cd829',
-            );
-          }}>
+        <TouchableOpacity onPress={() => Linking.openURL('https://www.termsfeed.com/live/ef8b58c3-5ebf-489d-bdf2-603ff04cd829')}>
           <Text style={styles.footerText}>Privacy Policy</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            Linking.openURL(
-              'https://www.termsfeed.com/live/ef8b58c3-5ebf-489d-bdf2-603ff04cd829',
-            );
-          }}>
+          <TouchableOpacity onPress={() => Linking.openURL('https://www.termsfeed.com/live/ef8b58c3-5ebf-489d-bdf2-603ff04cd829')}>
           <Text style={styles.footerText}>Developer Website</Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -214,6 +203,7 @@ const ManageProfile = () => {
   const [photo, setPhoto] = React.useState<ImageSourcePropType | undefined>(
     userProfile?.avatar,
   );
+  const {navigateToScreen} = useReactNativeNavigation();
   const [userName, setUserName] = React.useState(userProfile?.userName || '');
   const [about, setAbout] = React.useState(userProfile?.about || '');
   const selectImage = () => {
@@ -385,19 +375,38 @@ const ManageProfile = () => {
         gap: 16,
         marginBottom: 28,
       }}>
-      <Image
+      <View
         style={{
-          width: 100,
-          height: 100,
-          borderRadius: 100,
+          position: 'relative',
           marginHorizontal: 'auto',
-        }}
-        source={
-          userProfile?.avatar
-            ? {uri: userProfile.avatar}
-            : require('../shared/assets/emptyava.png')
-        }
-      />
+        }}>
+        <Image
+          style={{
+            width: 100,
+            height: 100,
+            borderRadius: 100,
+            marginHorizontal: 'auto',
+          }}
+          source={
+            userProfile?.avatar
+              ? {uri: userProfile.avatar}
+              : require('../shared/assets/emptyava.png')
+          }
+        />
+        <TouchableOpacity
+          onPress={() => {
+            navigateToScreen(ScreensRoads.MyQrCode);
+          }}
+          style={{
+            top: -10,
+            right: -10,
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: 'absolute',
+          }}>
+          <Image source={require('../shared/assets/qr.png')} />
+        </TouchableOpacity>
+      </View>
       <Text
         style={{
           textAlign: 'center',

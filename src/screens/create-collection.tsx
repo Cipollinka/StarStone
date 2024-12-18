@@ -15,6 +15,7 @@ import {STONES} from '../stone/config.ts';
 import {StoneCard} from '../stone';
 import React, {useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
+import {ScanQr} from './scan-qr.tsx';
 
 export const CreateCollectionScreen = () => {
   const {userProfile, setUserProfile} = useUserDataProfile();
@@ -88,6 +89,10 @@ export const CreateCollectionScreen = () => {
   console.log('saveDisabled', saveDisabled);
 
   const hasStones = stones.length !== 0;
+  const [isCameraOpened, setIsCamerOpened] = useState(false);
+
+  if (isCameraOpened) return <ScanQr setIsCamerOpened={setIsCamerOpened} />;
+
   return (
     <View
       style={{
@@ -204,29 +209,55 @@ export const CreateCollectionScreen = () => {
           </View>
         )}
         {hasStones ? (
-          <FlatList
-            contentContainerStyle={{
-              alignItems: 'stretch',
-              paddingBottom: 20,
-            }}
-            keyExtractor={(item, index) => index.toString()}
-            numColumns={2}
-            data={stones}
-            renderItem={({item}) => (
-              <StoneCard
-                className={{
-                  flex: 1,
-                  margin: 8,
-                }}
-                id={item.id}
-                image={item.image}
-                price={item.price}
-                title={item.title}
-                description={item.shortDescription}
-                footer={getFooterButton(item.id)}
-              />
-            )}
-          />
+          <View
+            style={{
+              flex: 1,
+              paddingBottom: 44,
+            }}>
+            <FlatList
+              contentContainerStyle={{
+                alignItems: 'stretch',
+              }}
+              keyExtractor={(item, index) => index.toString()}
+              numColumns={2}
+              data={stones}
+              renderItem={({item}) => (
+                <StoneCard
+                  className={{
+                    flex: 1,
+                    margin: 8,
+                  }}
+                  id={item.id}
+                  image={item.image}
+                  price={item.price}
+                  title={item.title}
+                  description={item.shortDescription}
+                  footer={getFooterButton(item.id)}
+                />
+              )}
+            />
+
+            <TouchableOpacity
+              onPress={() => {
+                setIsCamerOpened(true);
+              }}
+              style={{
+                paddingTop:10,
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexDirection: 'row',
+              }}>
+              <Image source={require('../shared/assets/pluspurple.png')} />
+              <Text
+                style={{
+                  fontSize: 20,
+                  color: '#A45DFB',
+                  fontFamily: 'SFProText-Regular',
+                }}>
+                Add friend
+              </Text>
+            </TouchableOpacity>
+          </View>
         ) : null}
         <TouchableOpacity
           onPress={async () => {

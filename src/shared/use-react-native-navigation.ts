@@ -25,6 +25,7 @@ export const useReactNativeNavigation = () => {
 };
 
 export enum ScreensRoads {
+  MyQrCode = 'MyQrCode',
   GemTapGame = 'GemTapGame',
   SelectTapToWinGame = 'SelectTapToWinGame',
   SelectMemoryGameLevel = 'SelectMemoryGameLevel',

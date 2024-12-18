@@ -30,6 +30,7 @@ import {SelectMemoryGameLevel} from './game/select-memory-game-level.tsx';
 import {HoldStoneScreen} from './game/hold-stone.tsx';
 import {SelectTapToWinGameScreen} from './game/select-tap-to-win-game.tsx';
 import GemTapGame from './game/tap-to-win.tsx';
+import { MyQrCodeScreen } from "./myqr.tsx";
 
 export type RootStackParamList = {
   [ScreensRoads.Settings]: undefined; // No params
@@ -80,6 +81,7 @@ export const Screens = () => {
           initialRouteName={ScreensRoads.Loader}>
           <Stack.Screen name={ScreensRoads.Loader} component={LoadingScreen} />
           <Stack.Screen name={ScreensRoads.GemTapGame} component={GemTapGame} />
+          <Stack.Screen name={ScreensRoads.MyQrCode} component={MyQrCodeScreen} />
           <Stack.Screen
             name={ScreensRoads.HoldStone}
             component={HoldStoneScreen}
