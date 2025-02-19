@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Star Stones</string>
+	<string>StarStone Explorer</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -27,10 +27,47 @@
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
-		<false/>
-		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>${PRODUCT_NAME} requires access to the camera to capture photos for user profiles and in-app activities.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>${PRODUCT_NAME} requires microphone access to record audio for in-app video features.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>${PRODUCT_NAME} We need access to your photo library to select images or videos.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>${PRODUCT_NAME} uses tracking to provide personalized ads tailored to your interests.</string>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>v9wttpbfk9.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>n38lu8286q.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>lr83yxwka7.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>f38h382jlk.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>4pfyvq9l8r.skadnetwork</string>
+		</dict>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>2u9pt9hc89.skadnetwork</string>
+		</dict>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>SFProText-Bold.ttf</string>
@@ -46,12 +83,10 @@
 		<string>SFProText-Semibold.ttf</string>
 		<string>SFProText-SemiboldItalic.ttf</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>${PRODUCT_NAME} requires access to the camera to capture photos for user profiles and in-app activities.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>${PRODUCT_NAME} requires microphone access to record audio for in-app video features.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>${PRODUCT_NAME} needs access to your Photo Library to enable photo selection for app use only.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -65,12 +100,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<true/>
-	<key>NSCameraUsageDescription</key>
-	<string>${PRODUCT_NAME} requires access to the camera to capture photos for user profiles and in-app activities.</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>${PRODUCT_NAME} requires microphone access to record audio for in-app video features.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>${PRODUCT_NAME} needs access to your Photo Library to enable photo selection for app use only.</string>
+	<false/>
 </dict>
 </plist>
